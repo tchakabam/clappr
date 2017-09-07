@@ -19,10 +19,10 @@ import Loader from 'components/loader'
 import Mediator from 'components/mediator'
 import MediaControl from 'components/media_control'
 import PlayerInfo from 'components/player_info'
-import BaseFlashPlayback from 'playbacks/base_flash_playback'
-import Flash from 'playbacks/flash'
-import FlasHLS from 'playbacks/flashls'
-import HLS from 'playbacks/hls'
+//import BaseFlashPlayback from 'playbacks/base_flash_playback'
+//import Flash from 'playbacks/flash'
+//import FlasHLS from 'playbacks/flashls'
+//import HLS from 'playbacks/hls'
 import HTML5Audio from 'playbacks/html5_audio'
 import HTML5Video from 'playbacks/html5_video'
 import HTMLImg from 'playbacks/html_img'
@@ -55,10 +55,10 @@ export default {
   BaseObject,
   UIObject,
   Utils,
-  BaseFlashPlayback,
-  Flash,
-  FlasHLS,
-  HLS,
+  //BaseFlashPlayback,
+  //Flash,
+  //FlasHLS,
+  //HLS,
   HTML5Audio,
   HTML5Video,
   HTMLImg,

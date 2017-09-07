@@ -8,10 +8,10 @@ import uniqBy from 'lodash.uniqby'
 
 /* Playback Plugins */
 import HTML5VideoPlayback from 'playbacks/html5_video'
-import FlashVideoPlayback from 'playbacks/flash'
 import HTML5AudioPlayback from 'playbacks/html5_audio'
-import FlasHLSVideoPlayback from 'playbacks/flashls'
-import HLSVideoPlayback from 'playbacks/hls'
+//import FlashVideoPlayback from 'playbacks/flash'
+//import FlasHLSVideoPlayback from 'playbacks/flashls'
+//import HLSVideoPlayback from 'playbacks/hls'
 import HTMLImgPlayback from 'playbacks/html_img'
 import NoOp from 'playbacks/no_op'
 
@@ -48,7 +48,15 @@ export default class Loader extends BaseObject {
   constructor(externalPlugins, playerId) {
     super()
     this.playerId = playerId
-    this.playbackPlugins = [HLSVideoPlayback, HTML5VideoPlayback, HTML5AudioPlayback, FlashVideoPlayback, FlasHLSVideoPlayback, HTMLImgPlayback, NoOp]
+    this.playbackPlugins = [
+        //HLSVideoPlayback,
+        HTML5VideoPlayback,
+        HTML5AudioPlayback,
+        //FlashVideoPlayback,
+        //FlasHLSVideoPlayback,
+        HTMLImgPlayback,
+        NoOp
+        ]
     this.containerPlugins = [SpinnerThreeBouncePlugin, WaterMarkPlugin, PosterPlugin, StatsPlugin, GoogleAnalyticsPlugin, ClickToPausePlugin]
     this.corePlugins = [DVRControls, Favicon, SeekTime, SourcesPlugin, EndVideo, Strings]
     if (externalPlugins) {
